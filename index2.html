@@ -1,0 +1,751 @@
+<!-- question header -->
+<div class="flex items-center gap-4 bg-gray-200 rounded-xl shadow-md p-6">
+  <div class="bg-gray-300 rounded-lg cursor-grab">
+    <img src="./src/images/app-dots.png" class="h-12" alt="grap" />
+  </div>
+
+  <p class="ml-auto font-bold text-lg">
+    <span>السؤال الأول</span>
+    <span>:</span>
+    <span>أختر الإجابة الصحيحة</span>
+  </p>
+
+  <button class="flex gap-2 px-4 py-2 rounded-lg shadow-sm bg-white">
+    <img src="./src/images/round-arrow.png" alt="" class="h-6" />
+    <span> استرجاع النموذج الأساسى </span>
+  </button>
+  <button
+    class="flex gap-1 px-4 py-2 rounded-lg shadow-sm bg-teal-600 text-white"
+  >
+    <span> حفظ </span>
+  </button>
+  <button
+    class="flex gap-1 px-4 py-2 rounded-lg shadow-sm bg-teal-600 text-white"
+  >
+    <img src="./src/images/pen.png" alt="" class="h-6" />
+    <span> تعديل </span>
+  </button>
+</div>
+<!-- questions body -->
+<!-- Choosing Questions -->
+<div class="bg-white px-16 py-10 rounded-b-xl">
+  <table class="w-full border-2 border-gray-600 text-center font-bold">
+    <tbody>
+      <!-- q1 type: text-->
+      <tr class="relative">
+        <td
+          class="border-2 border-gray-600 px-2 text-center text-lg w-10"
+          rowspan="2"
+        >
+          <span>1</span>
+          <input
+            type="radio"
+            name="q1"
+            class="absolute size-4 -right-10 mt-1 accent-teal-500"
+          />
+          <!-- edit mode -->
+          <div class="absolute -left-12 top-1/4 space-y-3">
+            <!-- edit -->
+            <button
+              class="flex size-8 rounded-lg shadow-sm bg-teal-600 relative group"
+            >
+              <img src="./src/images/pen.png" alt="" class="h-6 m-auto" />
+              <span
+                class="opacity-0 group-hover:opacity-100 duration-200 bg-teal-600 absolute -top-1 right-12 text-white font-normal rounded-lg py-1 px-2 before:absolute before:top-[10px] before:-right-2 before:border-t-8 before:border-t-transparent before:border-b-8 before:border-b-transparent before:border-l-8 before:border-l-teal-600"
+              >
+                تعديل
+              </span>
+            </button>
+            <button
+              class="flex size-8 rounded-lg shadow-sm bg-teal-600 relative group"
+            >
+              <img
+                src="./src/images/round-arrow.png"
+                alt=""
+                class="h-6 m-auto invert"
+              />
+              <span
+                class="opacity-0 group-hover:opacity-100 duration-200 bg-teal-600 absolute -top-1 right-12 text-white font-normal rounded-lg py-1 px-2 before:absolute before:top-[10px] before:-right-2 before:border-t-8 before:border-t-transparent before:border-b-8 before:border-b-transparent before:border-l-8 before:border-l-teal-600"
+              >
+                استرجاع
+              </span>
+            </button>
+            <button
+              class="flex size-8 rounded-lg shadow-sm bg-teal-600 relative group"
+            >
+              <img
+                src="./src/images/svg/check.svg"
+                alt=""
+                class="h-6 m-auto invert"
+              />
+              <span
+                class="opacity-0 group-hover:opacity-100 duration-200 bg-teal-600 absolute -top-1 right-12 text-white font-normal rounded-lg py-1 px-2 before:absolute before:top-[10px] before:-right-2 before:border-t-8 before:border-t-transparent before:border-b-8 before:border-b-transparent before:border-l-8 before:border-l-teal-600"
+              >
+                حفظ
+              </span>
+            </button>
+          </div>
+        </td>
+        <td colspan="4" class="border-2 border-gray-600 px-4 py-2 text-right">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="هى دين إبراهيم عليه السلام وكان عليها النبي صلى الله عليه وسلم قبل البعثة:"
+          />
+          <!-- edit mode -->
+          <span>
+            هي دين إبراهيم عليه السلام وكان عليها النبي صلى الله عليه وسلم قبل
+            البعثة:
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="border-2 border-gray-600 p-0">
+          <div class="flex items-stretch">
+            <div class="border-l-2 border-gray-600 py-1 px-2 flex items-center">
+              <input
+                type="radio"
+                name="q1"
+                id="q1-a1"
+                class="size-4 mt-1 accent-gray-700"
+              />
+            </div>
+            <label for="q1-a1" class="text-center w-full p-1">
+              <!-- edit mode -->
+              <input
+                type="text"
+                class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+                value="الحنفية"
+              />
+              <!-- edit mode -->
+              <span> الحنفية </span>
+            </label>
+          </div>
+        </td>
+        <td class="border-2 border-gray-600 p-0">
+          <div class="flex items-stretch">
+            <div class="border-l-2 border-gray-600 py-1 px-2 flex items-center">
+              <input
+                type="radio"
+                name="q1"
+                id="q1-a2"
+                class="size-4 mt-1 accent-gray-700"
+              />
+            </div>
+            <label for="q1-a2" class="text-center w-full p-1">
+              <!-- edit mode -->
+              <input
+                type="text"
+                class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+                value="اليهودية"
+              />
+              <!-- edit mode -->
+              <span>اليهودية</span>
+            </label>
+          </div>
+        </td>
+        <td class="border-2 border-gray-600 p-0">
+          <div class="flex items-stretch">
+            <div class="border-l-2 border-gray-600 py-1 px-2 flex items-center">
+              <input
+                type="radio"
+                name="q1"
+                id="q1-a3"
+                class="size-4 mt-1 accent-gray-700"
+              />
+            </div>
+            <label for="q1-a3" class="text-center w-full p-1">
+              <!-- edit mode -->
+              <input
+                type="text"
+                class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+                value="النصرانية"
+              />
+              <!-- edit mode -->
+              <span>النصرانية</span>
+            </label>
+          </div>
+        </td>
+        <td class="border-2 border-gray-600 p-0">
+          <div class="flex items-stretch">
+            <div class="border-l-2 border-gray-600 py-1 px-2 flex items-center">
+              <input
+                type="radio"
+                name="q1"
+                id="q1-a4"
+                class="size-4 mt-1 accent-gray-700"
+              />
+            </div>
+            <label for="q1-a4" class="text-center w-full p-1">
+              <!-- edit mode -->
+              <input
+                type="text"
+                class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+                value="المجوسية"
+              />
+              <!-- edit mode -->
+              <span>المجوسية</span>
+            </label>
+          </div>
+        </td>
+      </tr>
+      <!-- q2 type: images -->
+      <tr>
+        <td
+          class="border-2 border-gray-600 px-2 text-center text-lg relative w-10"
+          rowspan="2"
+        >
+          <span>2</span>
+          <input
+            type="radio"
+            name="q1"
+            class="absolute size-4 -right-10 mt-1"
+          />
+        </td>
+        <td colspan="4" class="border-2 border-gray-600 px-4 py-2 text-right">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="ما هى خريطة سوريا الصحيحة"
+          />
+          <!-- edit mode -->
+          <span>ما هى خريطة سوريا الصحيحة</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="border-2 border-gray-600 p-0 h-48">
+          <div class="flex items-stretch h-full">
+            <div class="border-l-2 border-gray-600 px-2 flex items-center">
+              <input
+                type="radio"
+                name="q2"
+                id="q2-a1"
+                class="size-4 mt-1 accent-gray-700"
+              />
+            </div>
+            <label
+              for="q1-a1"
+              class="text-center size-full flex items-center justify-center relative"
+            >
+              <img
+                src="./src/images/answers/a1-image.png"
+                alt="a1-image"
+                class="h-5/6 object-fill"
+              />
+              <!-- edit button -->
+              <button
+                class="flex size-10 rounded-lg shadow-sm bg-teal-600 text-white absolute bottom-4 left-4"
+              >
+                <input
+                  type="file"
+                  name=""
+                  id=""
+                  class="inset-0 absolute opacity-0"
+                />
+                <img src="./src/images/pen.png" alt="" class="h-6 m-auto" />
+              </button>
+            </label>
+          </div>
+        </td>
+        <td class="border-2 border-gray-600 p-0 h-48">
+          <div class="flex items-stretch h-48">
+            <div class="border-l-2 border-gray-600 px-2 flex items-center">
+              <input
+                type="radio"
+                name="q2"
+                id="q2-a2"
+                class="size-4 mt-1 accent-gray-700"
+              />
+            </div>
+            <label
+              for="q2-a2"
+              class="text-center size-full flex items-center justify-center relative"
+            >
+              <img
+                src="./src/images/answers/a2-image.png"
+                alt="a1-image"
+                class="h-5/6 object-fill"
+              />
+              <!-- edit button -->
+              <button
+                class="flex size-10 rounded-lg shadow-sm bg-teal-600 text-white absolute bottom-4 left-4"
+              >
+                <input
+                  type="file"
+                  name=""
+                  id=""
+                  class="inset-0 absolute opacity-0"
+                />
+                <img src="./src/images/pen.png" alt="" class="h-6 m-auto" />
+              </button>
+            </label>
+          </div>
+        </td>
+        <td class="border-2 border-gray-600 p-0 h-48">
+          <div class="flex items-stretch h-48">
+            <div class="border-l-2 border-gray-600 px-2 flex items-center">
+              <input
+                type="radio"
+                name="q2"
+                id="q2-a3"
+                class="size-4 mt-1 accent-gray-700"
+              />
+            </div>
+            <label
+              for="q1-a3"
+              class="text-center size-full flex items-center justify-center relative"
+            >
+              <img
+                src="./src/images/answers/a3-image.png"
+                alt="a3-image"
+                class="h-5/6 object-fill"
+              />
+              <!-- edit button -->
+              <button
+                class="flex size-10 rounded-lg shadow-sm bg-teal-600 text-white absolute bottom-4 left-4"
+              >
+                <input
+                  type="file"
+                  name=""
+                  id=""
+                  class="inset-0 absolute opacity-0"
+                />
+                <img src="./src/images/pen.png" alt="" class="h-6 m-auto" />
+              </button>
+            </label>
+          </div>
+        </td>
+        <td class="border-2 border-gray-600 p-0 h-48">
+          <div class="flex items-stretch h-48">
+            <div class="border-l-2 border-gray-600 px-2 flex items-center">
+              <input
+                type="radio"
+                name="q2"
+                id="q2-a4"
+                class="size-4 mt-1 accent-gray-700"
+              />
+            </div>
+            <label
+              for="q1-a4"
+              class="text-center size-full flex items-center justify-center relative"
+            >
+              <img
+                src="./src/images/answers/a4-image.png"
+                alt="a4-image"
+                class="h-5/6 object-fill"
+              />
+              <!-- edit button -->
+              <button
+                class="flex size-10 rounded-lg shadow-sm bg-teal-600 text-white absolute bottom-4 left-4"
+              >
+                <input
+                  type="file"
+                  name=""
+                  id=""
+                  class="inset-0 absolute opacity-0"
+                />
+                <img src="./src/images/pen.png" alt="" class="h-6 m-auto" />
+              </button>
+            </label>
+          </div>
+        </td>
+      </tr>
+      <!-- ... -->
+    </tbody>
+  </table>
+</div>
+<!-- Question Paragraph -->
+<div class="bg-white px-16 py-10 rounded-b-xl">
+  <table class="w-full border-2 border-gray-600 bg-gray-200 font-bold mb-10">
+    <tbody>
+      <tr class="border-2 border-gray-600">
+        <td class="p-2 text-lg">السؤال الأول : إقرأ القطعة وأجب عما يأتي:</td>
+      </tr>
+      <tr class="border-2 border-gray-600">
+        <td class="p-2 text-lg">
+          <!-- edit mode -->
+          <textarea
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            rows="6"
+          >
+                    كنت منذ صغري، أحبّ البيئة ومخلوقاتها، وأعجب برؤية أغصان   
+                    الشجر في البساتين والأعشاب في الحقول، ومع تقدمي في العمر،
+                    استمر حبي للطبيعة، ولكن حتى الكائنات أصابها بعض التبدل
+                    والتغير، إذ مارست صيد العصافير، غير مدرك الفارق العظيم بين
+                    حب البيئة، وقتل هذه الطيور الملونة في يوم كنت أمارس فيه
+                    هواية الصيد لمحت بساطة جميلة الألوان، وهي على غصن في شجرة
+                    سنديان تنقي، غافلة عما يحيط بها من خطر لقد قمت صوبتها بطلقة
+                    واحدة من بندقيتي، سقطت بعدها على العشب الذي يغمره الدفء،
+                    فاقتربت منها لأشاهدها، وهي تلفظ أنفاسها؛ ثبت على ما فعلت
+                    فبكيت واقفًا كأنني جذع شجرة. وقد تكون عيناهما الدامعتان هما
+                    اللتان جعلتاني ثابتًا في مكاني أنظر إليها وهي في آخر لحظاتها
+                    رجعت وأنا أبكي، وأقول لنفسي: لماذا فعلت هذا؟! منذ ذلك الحين،
+                    أقلعت عن الصيد، وعدت إلى عاداتي القديمة في . حب البيئة
+                    والاستمتاع بجمالها.
+                  </textarea
+          >
+          <!-- edit mode -->
+          <p>
+            كنت منذ صغري، أحبّ البيئة ومخلوقاتها، وأعجب برؤية أغصان الشجر في
+            البساتين والأعشاب في الحقول، ومع تقدمي في العمر، استمر حبي للطبيعة،
+            ولكن حتى الكائنات أصابها بعض التبدل والتغير، إذ مارست صيد العصافير،
+            غير مدرك الفارق العظيم بين حب البيئة، وقتل هذه الطيور الملونة في يوم
+            كنت أمارس فيه هواية الصيد لمحت بساطة جميلة الألوان، وهي على غصن في
+            شجرة سنديان تنقي، غافلة عما يحيط بها من خطر لقد قمت صوبتها بطلقة
+            واحدة من بندقيتي، سقطت بعدها على العشب الذي يغمره الدفء، فاقتربت
+            منها لأشاهدها، وهي تلفظ أنفاسها؛ ثبت على ما فعلت فبكيت واقفًا كأنني
+            جذع شجرة. وقد تكون عيناهما الدامعتان هما اللتان جعلتاني ثابتًا في
+            مكاني أنظر إليها وهي في آخر لحظاتها رجعت وأنا أبكي، وأقول لنفسي:
+            لماذا فعلت هذا؟! منذ ذلك الحين، أقلعت عن الصيد، وعدت إلى عاداتي
+            القديمة في . حب البيئة والاستمتاع بجمالها.
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="w-full border-2 border-gray-600 text-center font-bold">
+    <tbody>
+      <tr>
+        <td
+          class="border-2 border-gray-600 px-2 text-center text-lg"
+          rowspan="2"
+        >
+          1
+        </td>
+        <td colspan="4" class="border-2 border-gray-600 px-4 py-2 text-right">
+          هي دين إبراهيم عليه السلام وكان عليها النبي صلى الله عليه وسلم قبل
+          البعثة:
+        </td>
+      </tr>
+      <tr>
+        <td class="border-2 border-gray-600 p-0">
+          <div class="flex items-center">
+            <div class="border-l-2 border-gray-600 py-1 px-2">
+              <input
+                type="radio"
+                name="q1"
+                id="q1-a1"
+                class="size-4 mt-1 accent-gray-700"
+              />
+            </div>
+            <label for="q1-a1" class="text-center w-full">
+              <span>الحنفية</span>
+            </label>
+          </div>
+        </td>
+        <td class="border-2 border-gray-600 p-0">
+          <div class="flex items-center">
+            <div class="border-l-2 border-gray-600 py-1 px-2">
+              <input
+                type="radio"
+                name="q1"
+                id="q1-a2"
+                class="size-4 mt-1 accent-gray-700"
+              />
+            </div>
+            <label for="q1-a2" class="text-center w-full">
+              <span>اليهودية</span>
+            </label>
+          </div>
+        </td>
+        <td class="border-2 border-gray-600 p-0">
+          <div class="flex items-center">
+            <div class="border-l-2 border-gray-600 py-1 px-2">
+              <input
+                type="radio"
+                name="q1"
+                id="q1-a3"
+                class="size-4 mt-1 accent-gray-700"
+              />
+            </div>
+            <label for="q1-a3" class="text-center w-full">
+              <span>النصرانية</span>
+            </label>
+          </div>
+        </td>
+        <td class="border-2 border-gray-600 p-0">
+          <div class="flex items-center">
+            <div class="border-l-2 border-gray-600 py-1 px-2">
+              <input
+                type="radio"
+                name="q1"
+                id="q1-a4"
+                class="size-4 mt-1 accent-gray-700"
+              />
+            </div>
+            <label for="q1-a4" class="text-center w-full">
+              <span>المجوسية</span>
+            </label>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ======================================================= -->
+
+<!-- Checking(false/true) Question -->
+
+<div class="bg-white px-16 py-10 rounded-b-xl">
+  <table class="w-full border-2 border-gray-800 text-center rtl">
+    <tr>
+      <td
+        class="border-2 border-gray-800 px-2 py-2 font-bold text-center w-16 align-middle"
+      >
+        1
+      </td>
+
+      <td
+        class="border-2 border-gray-800 px-4 py-2 text-right align-middle font-bold"
+      >
+        هي دين إبراهيم عليه السلام وكان عليها النبي صلى الله عليه وسلم قبل
+        البعثة:
+      </td>
+      <td class="border-2 border-gray-800 px-2 py-2 w-32 text-xl">
+        (<img src="./src/images/svg/check.svg" alt="" class="inline-block" />)
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- CopyDrawing Question -->
+<div class="bg-white px-16 py-10 rounded-b-xl">
+  <table class="w-full bg-gray-200 border-2 border-gray-800">
+    <tr>
+      <td
+        class="border-2 border-gray-800 px-4 py-2 align-middle font-bold text-xl"
+      >
+        <p>
+          <span> السؤال الثالث </span>
+          <span> : </span>
+          <span> ارسم بخط النسخ </span>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td
+        class="border-2 border-gray-800 px-4 py-2 align-middle font-bold h-fit"
+      >
+        <p class="text-3xl my-5 text-center">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value='"يذهب التلميذ إلى المدرسة مبكرا كل صباح"'
+          />
+          <!-- normal mode -->
+          <span class="">"يذهب التلميذ إلى المدرسة مبكرا كل صباح"</span>
+        </p>
+        <div class="w-full h-[2px] my-7 bg-gray-500"></div>
+        <div class="w-full h-[2px] my-7 bg-gray-500"></div>
+        <div class="w-full h-[2px] my-7 bg-gray-500"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- ListenWrite Question -->
+<div class="bg-white px-16 py-10 rounded-b-xl">
+  <table class="w-full bg-gray-200 border-2 border-gray-800">
+    <tr>
+      <td
+        class="border-2 border-gray-800 px-4 py-2 align-middle font-bold text-xl"
+      >
+        <p>
+          <span> السؤال الرابع </span>
+          <span> : </span>
+          <span> اكتب ما تسمعه من المعلم في الفراغات التالية </span>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td
+        class="border-2 border-gray-800 px-4 py-2 align-middle font-bold h-fit"
+      >
+        <div class="w-full h-[3px] my-7 bg-gray-400"></div>
+        <div class="w-full h-[3px] my-7 bg-gray-400"></div>
+        <div class="w-full h-[3px] my-7 bg-gray-400"></div>
+        <div class="w-full h-[3px] my-7 bg-gray-400"></div>
+        <div class="w-full h-[3px] my-7 bg-gray-400"></div>
+        <div class="w-full h-[3px] my-7 bg-gray-400"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- Mating Question -->
+<div class="bg-white px-16 py-10 rounded-b-xl">
+  <table class="w-full border-2 border-gray-800 bg-gray-200 text-center">
+    <thead>
+      <tr>
+        <th
+          colspan="6"
+          class="border-2 border-gray-800 px-2 py-2 text-right font-bold"
+        >
+          السؤال الثاني: صل بين العبارات في المجموعة (أ) بما يناسبها من المجموعة
+          (ب):
+        </th>
+      </tr>
+      <tr class="">
+        <th class="border-2 border-gray-800 px-2 py-2 w-16">أ</th>
+        <th class="border-2 border-gray-800 px-2 py-2 w-1/4">المجموعة (أ)</th>
+        <th rowspan="4" class="w-auto"></th>
+        <th class="border-2 border-gray-800 px-2 py-2 w-16">ب</th>
+        <th class="border-2 border-gray-800 px-2 py-2 w-1/4">المجموعة (ب)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border-2 border-gray-800 py-2 font-bold">1</td>
+        <td class="border-2 border-gray-800 px-2 py-2">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="الحنفية"
+          />
+          <!-- edit mode -->
+          <span> الحنفية </span>
+        </td>
+        <td></td>
+        <td class="border-2 border-gray-800 py-2"></td>
+        <td class="border-2 border-gray-800 px-2 py-2">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="الحنفية"
+          />
+          <!-- edit mode -->
+          <span> الحنفية </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="border-2 border-gray-800 py-2 font-bold">2</td>
+        <td class="border-2 border-gray-800 px-2 py-2">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="الحنفية"
+          />
+          <!-- edit mode -->
+          <span> المجوسية </span>
+        </td>
+        <td></td>
+        <td class="border-2 border-gray-800 py-2"></td>
+        <td class="border-2 border-gray-800 px-2 py-2">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="الحنفية"
+          />
+          <!-- edit mode -->
+          <span> اليهودية </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="border-2 border-gray-800 py-2 font-bold">3</td>
+        <td class="border-2 border-gray-800 px-2 py-2">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="الحنفية"
+          />
+          <!-- edit mode -->
+          <span> الحنفية </span>
+        </td>
+        <td></td>
+        <td class="border-2 border-gray-800 py-2"></td>
+        <td class="border-2 border-gray-800 px-2 py-2">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="الحنفية"
+          />
+          <!-- edit mode -->
+          <span> الحنفية </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="border-2 border-gray-800 py-2 font-bold">4</td>
+        <td class="border-2 border-gray-800 px-2 py-2">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="الحنفية"
+          />
+          <!-- edit mode -->
+          <span> الحنفية </span>
+        </td>
+        <td></td>
+        <td class="border-2 border-gray-800 py-2"></td>
+        <td class="border-2 border-gray-800 px-2 py-2">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="الحنفية"
+          />
+          <!-- edit mode -->
+          <span> الحنفية </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="border-2 border-gray-800 py-2 font-bold">5</td>
+        <td class="border-2 border-gray-800 px-2 py-2">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="الحنفية"
+          />
+          <!-- edit mode -->
+          <span> المجوسية </span>
+        </td>
+        <td></td>
+        <td class="border-2 border-gray-800 py-2"></td>
+        <td class="border-2 border-gray-800 px-2 py-2">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="الحنفية"
+          />
+          <!-- edit mode -->
+          <span> اليهودية </span>
+        </td>
+      </tr>
+      <tr>
+        <td class="border-2 border-gray-800 py-2 font-bold">6</td>
+        <td class="border-2 border-gray-800 px-2 py-2">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="الحنفية"
+          />
+          <!-- edit mode -->
+          <span> الحنفية </span>
+        </td>
+        <td></td>
+        <td class="border-2 border-gray-800 py-2"></td>
+        <td class="border-2 border-gray-800 px-2 py-2">
+          <!-- edit mode -->
+          <input
+            type="text"
+            class="w-full bg-transparent border-2 border-teal-400 rounded-xl focus:outline-none px-2 py-1"
+            value="الحنفية"
+          />
+          <!-- edit mode -->
+          <span> الحنفية </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

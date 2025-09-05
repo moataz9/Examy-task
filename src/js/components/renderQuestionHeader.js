@@ -1,4 +1,4 @@
-import { questionsSortNamingAr } from "../helpers.js";
+import { questionsSortNamingAr } from "../constants.js";
 
 const renderQuestionHeader = (question) => /* html */ `
 <div class="flex items-center gap-4 bg-gray-200 rounded-xl shadow-md p-6">

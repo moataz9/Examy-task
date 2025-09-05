@@ -18,18 +18,23 @@ import renderApp from "./renderApp.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Attach event listeners to the global functions
-  // question actions
-  window.toggleEditModeForMainQuestion = toggleEditModeForMainQuestion;
-  window.enableEditModeForQuestion = enableEditModeForQuestion;
-  window.showActionsForQuestion = showActionsForQuestion;
-  window.saveMainQuestions = saveMainQuestions;
-  // option actions
-  window.editMainQuestion = editMainQuestion;
-  window.restoreMainQuestion = restoreMainQuestion;
-  window.saveMainQuestion = saveMainQuestion;
-  window.editSubQuestion = editSubQuestion;
-  window.restoreSubQuestion = restoreSubQuestion;
-  window.saveSubQuestion = saveSubQuestion;
+  const actions = [
+    // Questions actions
+    toggleEditModeForMainQuestion,
+    enableEditModeForQuestion,
+    showActionsForQuestion,
+    saveMainQuestions,
+    // Options actions
+    editMainQuestion,
+    restoreMainQuestion,
+    saveMainQuestion,
+    editSubQuestion,
+    restoreSubQuestion,
+    saveSubQuestion,
+  ];
+  actions.forEach((action) => {
+    if (typeof action === "function") window[action.name] = action;
+  });
   // Initial render
   renderApp();
 });

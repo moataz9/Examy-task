@@ -1,4 +1,4 @@
-import { questionsSortNamingAr } from "../../helpers.js";
+import { questionsSortNamingAr } from "../../constants.js";
 import renderChoosingQuestions from "./renderChoosingQuestions.js";
 import renderOptionsButtons from "../renderOptionsButtons.js";
 

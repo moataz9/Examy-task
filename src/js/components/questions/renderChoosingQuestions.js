@@ -135,7 +135,6 @@ ${question.options
 const renderChoosingQuestions = (mainQuestion) => {
   const mainQuestionIsEditModeActive = mainQuestion.isEditModeActive;
   const mainQuestionId = mainQuestion.id;
-  console.log("renderChoosingQuestions", mainQuestionIsEditModeActive);
   return /* html */ `
     <table class="striped-2-rows w-full border border-separate border-spacing-0 border-gray-600 text-center font-bold">
       <tbody>

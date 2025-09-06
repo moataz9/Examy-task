@@ -1,9 +1,17 @@
 import { questionsSortNamingAr } from "../constants.js";
 
 const renderQuestionHeader = (question) => /* html */ `
-<div class="flex items-center gap-4 bg-gray-200 rounded-xl shadow-md p-6">
-  <div class="bg-gray-300 rounded-lg cursor-grab">
-    <img src="./src/images/app-dots.png" class="h-12" alt="grap" />
+<div 
+  class="flex items-center gap-4 bg-gray-200 rounded-xl shadow-md p-6"
+  data-question-id="${question.id}"
+>
+  <div 
+    class="bg-gray-300 rounded-lg cursor-grab"
+    onmousedown="makeParentDraggable(event, ${question.id})"
+    onmouseup="makeParentUnDraggable(event, ${question.id})"
+    draggable="false"
+  >
+    <img src="./src/images/app-dots.png" class="h-12" alt="grap" draggable="false" />
   </div>
 
   <p class="ml-auto font-bold text-lg">

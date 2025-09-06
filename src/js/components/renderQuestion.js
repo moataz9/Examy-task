@@ -1,7 +1,7 @@
 const renderQuestion = (headerEl, bodyEl) => /* html */ `
-<div>
+<div class="element-to-drag">
   ${headerEl}
-  <div class="bg-white px-16 py-10 rounded-b-xl">
+  <div class="bg-white px-16 py-10 rounded-b-xl hide-on-drag">
     ${bodyEl}
   </div>
 </div>

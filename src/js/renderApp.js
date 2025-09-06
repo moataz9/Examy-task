@@ -1,10 +1,11 @@
 // compoenents
-import { default as AllQuestions } from "./mockData.js";
+import AllQuestions from "./mockData.js";
 import renderChoosingQuestions from "./components/questions/renderChoosingQuestions.js";
 import renderPargaphQuestion from "./components/questions/renderPargaphQuestion.js";
 import renderQuestionHeader from "./components/renderQuestionHeader.js";
 import renderQuestion from "./components/renderQuestion.js";
-const questionsSection = document.getElementById("questions");
+
+const questionsContainer = document.getElementById("questions");
 
 // Initialize the questions section with mock data
 const renderApp = () => {
@@ -28,7 +29,7 @@ const renderApp = () => {
       }
     });
   }
-  questionsSection.innerHTML = finalHTMLContent;
+  questionsContainer.innerHTML = finalHTMLContent;
 };
 
 export default renderApp;

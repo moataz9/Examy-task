@@ -35,7 +35,7 @@ function enableEditModeForQuestion(mainQuestionId, questionId) {
     }
   }
   // Re-render the page to reflect the changes
-  console.log("Toggling edit mode for question:", requestedQuestion.id);
+  // console.log("Toggling edit mode for question:", requestedQuestion.id);
   renderApp();
 }
 
@@ -63,7 +63,7 @@ function showActionsForQuestion(mainQuestionId, questionId) {
     }
   }
   // Re-render the page to reflect the changes
-  console.log("Toggling option Actions for question:", requestedQuestion.id);
+  // console.log("Toggling option Actions for question:", requestedQuestion.id);
   renderApp();
 }
 
@@ -78,7 +78,7 @@ function saveMainQuestions(mainQuestionId) {
     requestedQuestion.isEditModeActive = false;
   }
   // Re-render the page to reflect the changes
-  console.log("Main question saved:", requestedQuestion);
+  // console.log("Main question saved:", requestedQuestion);
   renderApp();
 }
 
